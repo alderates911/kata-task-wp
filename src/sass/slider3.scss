@@ -1,0 +1,202 @@
+.prices {
+    background-color: #F8F8F8;
+}
+
+.prices-list-container {
+    position: relative;
+    overflow: hidden;
+    .swiper {
+        height: 244px;
+        width: 274px;
+        overflow: visible;
+        margin-left: 0px;
+        position: static;
+    }
+    .swiper > .swiper-wrapper{
+        padding: 0;
+        padding-left: 8px;
+        margin: auto;
+    }
+    .swiper-slide{
+        width: 260px !important;
+        height: 200px;
+        border-radius: 6px;
+        background-color: #fff;
+        margin-right: 16px;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    .swiper > .swiper-button-prev, .swiper-button-next{
+        width: 24px;
+        height: 200px;
+        top: 20px;
+    }
+    .swiper > .swiper-button-prev {
+        left: 0;
+    }
+    .swiper > .swiper-button-prev::after {
+        display: none;
+    }
+}
+
+.service-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .service-card__name,
+    .service-card__description {
+    margin: 0;
+    padding: 0;
+    }
+    .service-card__name,
+    .service-card__description {
+    margin: 0;
+    padding: 0;
+    }
+    .service-card__description {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+    }
+}
+
+.service-card__order-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.prices__table {
+    display: none;
+    width: 720px;
+    height: 380px;
+    margin-left: 24px;
+    padding: 0;
+    background-color: inherit;
+    .prices__table-header {
+        display: grid;
+        font-size: 14px;
+        line-height: 16px;
+        color: #7E7E82;
+        height: 32px !important;
+        padding: 0 16px;
+        border: none !important;
+        div:nth-child(3) {
+            grid-column: 3 / 5;
+        }
+    }
+    .prices__table-body {
+        height: 324px;
+        padding: 0 16px;
+        background-color: white;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        color: #1B1C21;
+        border-radius: 8px;
+    }
+    .prices__table-item {
+        display: grid;
+        grid-template-columns: 4.5fr 1fr 1fr 1.5fr;
+        height: 65px;
+        column-gap: 20px;
+        align-items: center;
+        border-bottom: 1px solid #EAEAEA;
+    }
+    .prices__table-item:last-child {
+        border: none;
+    }
+}
+
+.special-offer {
+    width: 288px;
+    height: 191px;
+    margin-left: 24px;
+    vertical-align: middle;
+    .special-offer__description {
+        line-height: 20px;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        margin: 0 0 16px 0;
+    }
+    .special-offer__button {
+        font-family: "TTLakes medium";
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: -0.2px;
+        text-decoration: none;
+        color:#1B1C21;
+        &:hover {
+            color:#ff3e79;
+        }
+    }
+    .special-offer__icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/Line.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119.98px) {
+
+    .prices .repair__header {
+        padding-left: 24px;
+    }
+    .prices {
+        .prices-list-container {
+            display: none;
+        }
+    }
+    .prices__table {
+        display: block;
+    }
+    .special-offer {
+        width: 421px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    
+    .prices .repair__header {
+        padding-left: 32px;
+    }
+    .prices {
+        .prices-list-container {
+            display: none;
+        }
+    }
+    .prices__table {
+        display: block;
+        width: 750px;
+    }
+    .special-offer {
+        width: 421px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .prices .repair__header {
+        padding-left: 32px;
+    }
+    .prices {
+        .prices-list-container {
+            display: none;
+        }
+    }
+    .prices__table {
+        display: block;
+        width: 1056px;
+    }
+    .special-offer {
+        width: 421px;
+        height: 100px;
+    }
+}

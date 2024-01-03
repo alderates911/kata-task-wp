@@ -1,0 +1,61 @@
+.repair {
+    background-color: #F8F8F8;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-bottom: 38px;
+}
+.repair__header {
+    border-top: 1px solid #D9FFF5;
+    padding: 1rem;
+    height: 80px;
+    background-image: linear-gradient(to right, #F8F8F8, #ffffff);
+    margin-bottom: 1rem;
+}
+
+.repair__title {
+    margin: 0;
+    font-family: "TTLakes";
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: #7E7E82;
+}
+
+.repair__read-more {
+    width: auto;
+    padding-left: 24px;
+    display: none;
+    margin: 20px 0 0 10px;
+    &::before {
+        transition: transform 0.5s ease-in-out;
+    }
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.repair__read-more-modified::before {
+    transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119.98px) {
+    .repair__header {
+        display: flex;
+        align-items: center;
+    }
+    .repair__read-more {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .repair__header {
+        display: flex;
+        align-items: center;
+    }
+    .repair__read-more {
+        display: block;
+    }
+}

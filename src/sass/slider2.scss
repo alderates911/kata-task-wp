@@ -1,0 +1,155 @@
+.equipment-repair {
+    background-color: #F8F8F8;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 302px;
+    transition: height .5s ease-out;
+}
+
+.equipment-repair__button {
+    width: auto;
+    padding-left: 24px;
+    display: none;
+    margin: 20px 0 0 10px;
+}
+
+.slider-wrapper {
+    display: block;
+    height: 162px;
+    transition: height .5s ease-out;
+    position: relative;
+    .swiper {
+        display: flex;
+        width: 240px;
+        height: 160px;
+        overflow: visible;
+        margin-left: 1rem;
+        position: static;
+    }
+    .swiper-wrapper {
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        height: 160px;
+        box-sizing: border-box;
+        transition: height 0.4s ease-in-out;
+        margin-top: 1px;
+        list-style: none;
+    }
+    .swiper-slide {
+        position: relative;
+        width: 240px;
+        height: 160px;
+        border: 1px solid #EAEAEA;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 16px;
+        &:hover {
+            border: 1px solid #FF3E79;
+        }
+    }
+    .item-title {
+        font-family: "TTLakes medium";
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: -0.2px;
+    }
+    .slider__link {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(-16px, -16px);
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        width: 100%;
+        z-index: 2030;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -36px;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        width: 24px;
+        height: 166px;
+        right: 0;
+        top: 20px;
+        background-image: linear-gradient(to right, transparent, #FFFFFF );
+    }
+    .swiper-button-prev {
+        left: 0;
+        transform: scale(-1);
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        display: none;
+    }
+}
+
+.show {
+    height: 512px;
+}
+
+.equip-show {
+    height: 688px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1119.98px) {
+    .slider-wrapper {
+        overflow: hidden;
+        .swiper-wrapper {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 1rem;
+            min-width: 760px;
+            height: 512px;
+            overflow: hidden;
+            transform: none !important;
+        }
+        .swiper-pagination {
+            display: none;
+        }
+        .swiper-button-prev, .swiper-button-next {
+            display: none;
+        }
+    
+    }
+    .equipment-repair__button {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1120px) {
+    .slider-wrapper {
+        overflow: hidden;
+        .swiper-wrapper {
+            display: grid;
+            grid-auto-flow: row;
+            grid-template-columns: 240px 240px 240px 240px;
+            column-gap: 32px;
+            row-gap: 1rem;
+            min-width: 1120px;
+            height: 512px;
+            overflow: hidden;
+            transform: none !important;
+        }
+
+        .swiper-pagination {
+            display: none;
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            display: none;
+        }
+    }
+   
+    .equipment-repair__button {
+        width: auto;
+        padding-left: 24px;
+        display: block;
+    }
+}

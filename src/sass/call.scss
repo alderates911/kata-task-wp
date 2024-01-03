@@ -1,0 +1,71 @@
+.call {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    width: 320px;
+    height: 676px;
+    box-shadow: -16px 0 52px rgba(14, 24, 80, 0.2);
+    transform: translate(130%);
+    transition: .3s;
+    padding: 16px;
+    z-index: 9999;
+    .call__button {
+        margin: 0;
+    }
+    .call__title {
+        font-family: 'TTLakes';
+        position: relative;
+        padding: 0;
+        margin-top: 40px;
+        margin-bottom: 24px;
+        line-height: 32px;
+    }
+    .call__submit-btn {
+        align-self: end;
+        margin-top: 7px;
+        
+    }
+}
+
+.call-active {
+    display: flex;
+    transform: translate(0);
+}
+
+.call__title::before {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius: 0px 10px 10px 0px;
+    left: -16px;
+    top: -5px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .call {
+        width: 440px;
+        height: 940px;
+        padding: 32px;
+        padding-top: 40px;
+        .call__title {
+            margin-top: 0px;
+            vertical-align: bottom;
+            
+        }
+
+        .call__button {
+            position: absolute;
+            margin: 0;
+            left: -80px;
+        }
+    }
+    .call__title::before {
+        left: -32px;
+    }
+}

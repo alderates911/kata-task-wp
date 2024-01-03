@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 24px 16px;
+    height: 88px;
+    border-bottom: 1px solid #D9FFF5;
+    .header__menu {
+        display: block;
+        margin-right: 4px;
+        align-self: baseline;
+    }
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10px;
+        flex: 1 0 96.55px;
+    }
+    .header__service {
+        display: flex;
+        margin-left: 4px;
+        gap: 16px;
+    }
+    .header__menu-btn {
+        background-image: url('../img/icon.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .header__call {
+        background-image: url('../img/call.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .header__chat {
+        background-image: url('../img/chat.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .header__profile {
+        background-image: url('../img/profile.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119.98px) {
+    .header {
+        padding: 24px;
+    }
+
+    .header__contact[hidden] {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+}

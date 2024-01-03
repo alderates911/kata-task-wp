@@ -1,0 +1,93 @@
+$text-color: #7e7e82;
+$btn-background-color: #ff3e79;
+$background-color: #f8f8f8;
+$border-list: 1px solid #d9fff5;
+$stick-color: #41f6d7;
+$item-border-color: #eaeaea;
+$item-background: #fff;
+$input-text-color: #b5b6bc;
+$price-text: #1b1c21;
+
+
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "TTLakes medium";
+    src: url("../fonts/TTLakes-Medium.woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTLakes";
+    src: url("../fonts/TTLakes-Regular.woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTLakes bold";
+    src: url("../fonts/TTLakes-Bold.woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT bold";
+    src: url("../fonts/TTLakes-Bold.ttf");
+}
+
+@font-face {
+    font-family: "TTLakes2";
+    src: url("../fonts/TTLakes-Regular.ttf");
+    font-style: normal;
+}
+
+body {
+    font-family: "TTLakes", sans-serif;
+    min-width: 320px;
+    max-width: 1440px;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    
+}
+
+@media screen and (min-width: 1120px) {
+    body {
+        max-width: 1120px;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 320px 1120px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 1440px;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 320px 1120px;
+    }
+}
+
+
+@import './independents.scss';
+@import './header.scss';
+@import './main.scss';
+@import './side-menu.scss';
+@import './navigation.scss';
+@import './brands.scss';
+@import './slider1.scss';
+@import './slider2.scss';
+@import './slider3.scss';
+@import './footer.scss';
+@import './feedback.scss';
+@import './call.scss';

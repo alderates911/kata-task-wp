@@ -1,0 +1,39 @@
+.navigation {
+    .navigation__list {
+        list-style: none;
+        display: flex;
+        overflow-x: auto;
+        padding-left: 1rem;
+        margin: 0;
+        -ms-overflow-style: none;
+        overflow: -moz-scrollbars-none;
+        .navigation__button {
+            font-family: "TTLakes medium";
+            color: #7E7E82;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            height: 36px;
+            white-space: nowrap;
+            padding: 0 1.23em 0 1.23em;
+            border: none;
+            background-color: transparent;
+        }
+        .navigation__button_active {
+            border: 2px solid #B8FFEC;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+    }
+    .navigation__list::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .navigation__list {
+        padding-left: 2rem;
+        flex-wrap: wrap;
+    }
+
+}
